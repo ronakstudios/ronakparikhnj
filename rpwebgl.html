@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | LampAndRock</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/WebGL Build.json", {onProgress: UnityProgress});
+    </script>
+  </head>
+  <body>
+    <div class="webgl-content">
+      <div id="gameContainer" style="width: 960px; height: 600px"></div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+        <div class="title">LampAndRock</div>
+      </div>
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<div style="text-align:center; font-family: 'Roboto', sans-serif;">
+<h2>WebGL Unity Demo - Ronak Parikh</h2>
+<style>
+@keyframes anim{
+0% {color: #FF0000}
+50% {color: #BB4444}
+100% {color: #FF0000}
+}
+</style>
+<p style="animation: infinite anim 3s">
+Warning: This demo takes a long time to load, if it doesn't work, try it in Microsoft Edge.
+</p>
+<p style="color: #44EE44">Controls: WASD to Move, X to Reset Position, Z to Adjust Lamp, Hold SPACE to Fly. You are the rock, you have gravity, the lamp does not.</p>
+<p> I made this game in Unity and designed the models in C4D. The purpose of this game is to test how well my models from cinema4d can be rendered in unity. As you can see, all texture, normal, displacement, bump, and reflection maps are able to bake properly and interace with other objects and lighting conditions properly. The UV unwrapped maps work especially well and you can even see the dirt/dust on the rock! The C# code for unity is also escpecially easy to work with and is just like Java and Processing.</p>
+</div>
+
+    </div>
+  </body>
+</html>
